@@ -1,0 +1,18 @@
+{
+  "name": "messagequeue-and-sse",
+  "version": "1.0.0",
+  "description": "This is a basic usecase of message-queue and SSE(Server-Sent-Events) to implement time consuming request processing in backend.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "start nodemon server.js & start nodemon worker.js",
+    "start": "start node worker.js & start node server.js"
+  },
+  "author": "Subrata Rudra",
+  "license": "ISC",
+  "dependencies": {
+    "bullmq": "^5.41.7",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "ioredis": "^5.5.0"
+  }
+}

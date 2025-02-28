@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Heavy Request</title>
+  </head>
+  <body>
+    <div id="main">
+      <h1>Send Heavy Request</h1>
+      <div id="box">
+        <div>
+          <label for="num">Duration (in seconds) :</label>
+          <input type="number" name="num" id="num" placeholder="e.g. 5" />
+        </div>
+        <button onclick="startProcessing()">Send Request</button>
+      </div>
+      <div id="responseDiv"></div>
+    </div>
+  </body>
+</html>
